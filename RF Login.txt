@@ -1,0 +1,8 @@
+Gayathri.yadla@tessolve.com
+G98488369@62
+
+Please note that impedances always add in series, regardless of what type of components comprise the impedances. That is, resistive impedance, inductive impedance, and capacitive impedance are to be treated the same way mathematically.
+A purely resistive impedance will always have a phase angle of exactly 0° (ZR = R Ω ∠ 0°).
+A purely capacitive impedance will always have a phase angle of exactly -90° (ZC = XC Ω ∠ -90°).
+Ohm’s Law for AC circuits: E = IZ ; I = E/Z ; Z = E/I
+When resistors and capacitors are mixed together in circuits, the total impedance will have a phase angle somewhere between 0°- and -90°.
