@@ -1,7 +1,9 @@
-
-
-Please note that impedances always add in series, regardless of what type of components comprise the impedances. That is, resistive impedance, inductive impedance, and capacitive impedance are to be treated the same way mathematically.
-A purely resistive impedance will always have a phase angle of exactly 0° (ZR = R Ω ∠ 0°).
-A purely capacitive impedance will always have a phase angle of exactly -90° (ZC = XC Ω ∠ -90°).
-Ohm’s Law for AC circuits: E = IZ ; I = E/Z ; Z = E/I
-When resistors and capacitors are mixed together in circuits, the total impedance will have a phase angle somewhere between 0°- and -90°.
+Download NoAuthentication file for your device
+Browse and select the patch firehose file
+now enter device into EDL(Emergency Download Mode)
+open cmd as Admin in the QPST Location
+now create  a blank frp file bin by entering the cmd:"fsutil file createnew frp_blank.bin 524288"
+ENTER KEY
+now again type this cmd:"fsutil file setzerodata offset=0 length=524288 frp_blank.bin"
+if anything mesed up in this process,device will brick and so make a backup by entering the cmd:"fh_loader.exe --port=\\.\COM1 --convertprogram2read --sendimage=frp_original.bin --start_sector=152 --lun=0 --num_sectors=128 --noprompt --showpercentagecomplete --zlpawarehost=1 --memoryname=ufs"
+To erase the frp cmd:"fh_loader.exe --port=\\.\COM1 --sendimage=frp_blank.bin --start_sector=152 --lun=0 --noprompt --showpercentagecomplete --zlpawarehost=1 --memoryname=ufs" 
